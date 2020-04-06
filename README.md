@@ -1,6 +1,3 @@
-# Career Guidance 
-Small descrption here
-
 ## Structure of the code
 ```
 ├── data                            <- folder for datasets (dataset downloading in statistics.ipynb)
@@ -41,10 +38,10 @@ To prerform this research data from wikipedia.org were used. I wrote a [parser](
 
 Very rare people have one profession. More often it's at least several. Also people were more outstanding that now. Outstanding people in same time did math, physics, write novels, politics. 
 
-![samples distribution](https://github.com/linkyeu/career_guidance/blob/master/images/samples_distribution_per_profession.png)</br>
+![samples distribution](https://github.com/linkyeu/astrology-research-1/blob/master/images/samples_distribution_per_profession.png)</br>
 _Figure 1_ - Few professions have more number of samples that 5k and only one 30k. Number of samples already have meaning. At least could be interpreted as profession popularity. Also time range for profession's samples could be interpreted as profession popularity in that specific time.
 
-![year of birth distribution](https://github.com/linkyeu/career_guidance/blob/master/images/disribution_year_of_birth.png)
+![year of birth distribution](https://github.com/linkyeu/astrology-research-1/blob/master/images/disribution_year_of_birth.png)
 </br>
 _Figure 2_ - Plot is also very interesting probably it could be interpreted as profession popularity in very coarse approximation. Some professions are became out of date, e.g. `botanic`. 
 
@@ -61,7 +58,7 @@ For further analysis I heavily applied - [Pearson's chi-squared test](https://en
 A test of goodness of fit establishes whether an observed frequency distribution differs from a theoretical distribution*.</br> 
 Null hypothesis declares __"Astrological signs within profession have discrete uniform distribution."__</br> 
 Alternative hypothesis declares that distribution is not uniform and success in specific profession depends on astrological sign. Test was performed for each profession separately with 95% confidence interval.</br>
-![chi_square_goodness_of_fit](https://github.com/linkyeu/career_guidance/blob/master/images/chi_square_goodness_of_fit.png)</br>
+![chi_square_goodness_of_fit](https://github.com/linkyeu/astrology-research-1/blob/master/images/chi_square_goodness_of_fit.png)</br>
 _Figure 3_ - Pearson's chi-squared test (Goodness of Fit) for each profession.</br>
 
 __Conclution #1:__
@@ -84,7 +81,7 @@ Null hypothesis is refected!
 __Conclution #2:__</br>
 __TODO: This should beworked. Instead of taking profession pair beter to add eastern animal to astrological sign and test against one profession.__</br>
 Degree of freedom is very hight in case when I used all professions (high cardinality). To understand approximatly individual weight of each profession I tested all profession pairs (each with each).</br>
-![chi_square_each_with_each](https://github.com/linkyeu/career_guidance/blob/master/images/chi_square_each_with_each.png)</br>
+![chi_square_each_with_each](https://github.com/linkyeu/astrology-research-1/blob/master/images/chi_square_each_with_each.png)</br>
 _Figure 4_ - Pearson's chi-squared test (Independence) for each professions pairs. _Black cells mean that null hypothesis rejected_</br></br>
 
  Null hypothesis rejection clearly depends on profession pairs. At least four professions have stong influence (e.g. NH rejected almost no matter on what pair is). __Success in some professions depends from astrological sign and this dependence has statistical significance.__.</br>
